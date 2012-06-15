@@ -1,9 +1,15 @@
-As recommended by Github, a README
+As recommended by Github, a README:
 
-these are the files for a schematic version of a website built with
-Foundation.  I am trying to include everything so as to push this to a
-webserver and test in various browsers. When I am sure the schematic
-works I will add in all the wizzy content. 
+These are the files for a schematic version of a website built with
+Foundation. I was trying out using a responsive grid, responsive
+slideshow (not added yet, but already buit), mobile phone version,
+media queries, web fonts, the whole shebang. 
+
+At first I am include everything in the schematic version so as to
+push this to a webserver and test in various browsers. When I am sure
+the schematic works I will commit the wizzy content in the place of the 
+schematic elements. So if you follow the commits you can see how a 
+responsive design can be filled in. 
 
 It is a site for a Kickstarter campaign for a kids' book, incidentally. 
 
