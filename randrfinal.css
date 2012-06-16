@@ -153,9 +153,20 @@ body { background:rgb(20,1,44); }
 
 @media only screen and (min-width: 768px) {
     .mainnav { position:relative; z-index:5; }
-    .mainnav #primary { position:absolute; left:10px; top: 79px; display:block; z-index:99999; width:auto }
-    .mainnav #primary ul, .mainnav #secondary ul { list-style:none; margin:0; padding:0}
-    .mainnav #primary li { 
+    .mainnav #primary, .mainnav #secondary {
+	position:absolute; 
+	top: 79px; 
+	display:block; 
+	z-index:99999; 
+	width:auto }
+    .mainnav #primary { left:25px;}
+    .mainnav #secondary { left:-25px;}
+    .mainnav #primary ul, .mainnav #secondary ul { 
+	list-style:none; 
+	margin:0; 
+	padding:0
+    }
+    .mainnav #primary li, .mainnav #secondary li { 
 	/*text-transform:lowercase;*/
 	float:left; 
 	font-size:1.2em;
@@ -170,7 +181,7 @@ body { background:rgb(20,1,44); }
 	border-top-right-radius: 8px;
 	padding:8px 8px 0 8px;
     } 
-    .mainnav #primary li a {
+    .mainnav #primary li a, .mainnav #secondary li a {
 	font-weight:700;
 	color:#f8f1ff;
 	background:transparent;
@@ -187,29 +198,19 @@ body { background:rgb(20,1,44); }
 	border-bottom:0;
     }
     .mainnav #primary li a:hover { text-decoration:underline; color:#fff }
-    .mainnav #primary li.selected, 
-    .mainnav #primary li.home,
-    .mainnav #primary li.about { background:rgba(13,177,75,0.2); }
-    .mainnav #primary li.selected a, 
-    .mainnav #primary li.home a,
-    .mainnav #primary li.about a { background:#fff; border-color:#6e637e; color:#533f6e }
-    .mainnav #primary li.selected a:hover,
-    .mainnav #primary li.home a:hover,
-    .mainnav #primary li.about a:hover { text-decoration:none }
+    .mainnav #primary li.home { background:rgba(13,177,75,0.2); }
+    .mainnav #primary li.home a { background:#fff; border-color:#6e637e; color:#533f6e }
+    .mainnav #primary li.home a:hover { text-decoration:none }
     .mainnav #primary span { padding-left:0 }
     
     /* Icons */
     
-    .mainnav #primary li.blog { background:url('images/iconwordpress_sm_green.png') no-repeat scroll 15px -3px; }
-    .mainnav #primary li.fb { background:url('images/iconfacebook_sm_green.png') no-repeat scroll 15px -3px; }
-    .mainnav #primary li.twitter { background:url('images/icontwitter_sm_green.png') no-repeat scroll 15px -3px; }
-    .mainnav #primary li.twitterbird { background:url('images/icontwitter_bird_sm_green.png') no-repeat scroll 15px -3px; }
+    .mainnav #secondary li.blog { background:url('images/iconwordpress_sm_green.png') no-repeat scroll 15px -3px; }
+    .mainnav #secondary li.fb { background:url('images/iconfacebook_sm_green.png') no-repeat scroll 15px -3px; }
+    .mainnav #secondary li.twitter { background:url('images/icontwitter_sm_green.png') no-repeat scroll 15px -3px; }
+    .mainnav #secondary li.twitterbird { background:url('images/icontwitter_bird_sm_green.png') no-repeat scroll 15px -3px; }
 
 }
-
-/*body#client.loggedin-0 .mainnav { display:none }
-body#client.loggedin-0 .bottom-primary, body#client.loggedin-0 .bottom-secondary { display:none } */
-
 
 /* -----------------------------------------
    Orbit
