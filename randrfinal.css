@@ -238,14 +238,22 @@ height: 470;
 width: 80% !important;
 }
 
-div.slider-nav span.left {
-background: url("images/orbit/left-arrow.png") scroll 0 0 transparent no-repeat !important;
-left: -12% !important;
-/*background: url("images/orbit/crystalbackward.png") scroll 0 0 transparent no-repeat !important;
-height:128px !important;
-width:128px !important;
-left: -15% !important;*/
- }
+@media only screen and (max-width: 768px) {
+    div.slider-nav span.left {
+	background-image: none !important;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    div.slider-nav span.left {
+	/*background: url("images/orbit/left-arrow.png") scroll 0 0 transparent no-repeat !important;
+left: -12% !important;*/
+	background: url("images/orbit/yellow_backward.png") scroll 0 0 transparent no-repeat !important;
+	height:128px !important;
+	width:128px !important;
+	left: -14% !important;
+    }
+}
 
 #topslideshow .slide1 {
 background: url(images/slide1.jpg) no-repeat;
@@ -255,13 +263,25 @@ text-align:left;
 }
 
 div.slider-nav span.right {
-    background: url("images/orbit/right-arrow.png") scroll 0 0 transparent no-repeat !important;
-    left: 103% !important;
-/*background: url("images/orbit/crystalforward.png") scroll 0 0 transparent no-repeat !important;
-height:128px !important;
-width:128px !important;
-left: 95% !important;*/
+/*    background: url("images/orbit/right-arrow.png") scroll 0 0 transparent no-repeat !important;
+    left: 103% !important;*/
+    height:128px !important;
+    width:128px !important;
+    left: 95% !important;
 }
+
+@media only screen and (min-width: 768px) {
+    div.slider-nav span.right {
+	background: url("images/orbit/yellow_forward.png") scroll 0 0 transparent no-repeat !important;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    div.slider-nav span.right {
+	background: url("images/orbit/blue_forward.png") scroll 0 0 transparent no-repeat !important;
+    }
+}
+
 
 #topslideshow .booktitle {
 display: block;
