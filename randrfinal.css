@@ -73,6 +73,24 @@ body { background:rgb(20,1,44); }
 	}
 
 
+/*---------------------------
+
+              Text Styles
+
+------------------------------------*/
+
+.booktitle {
+font-size: 28pt;
+line-height: .9;
+font-family: 'GROBOLDRegular',sans-serif;
+color: #0071BC;
+letter-spacing: -1px;
+}
+
+p {
+font-size: 18pt;
+}
+
 
 /*---------------------------
 
@@ -297,7 +315,7 @@ font-size: 18pt;
 }
 
 #topslideshow .slidetext {
-padding: 2em 0 2em 0;
+padding: 1em 0 2em 0;
 }
 
 /* -----------------------------------
@@ -315,7 +333,16 @@ padding: 2em 0 2em 0;
 				 color-stop(0, transparent),
 				 color-stop(0.5, green),
 				 color-stop(1, transparent));
+    margin: 2em 0 2em 0;
 }	
+
+.divider {
+    border-bottom: 1px solid #F4F4F4;
+    border-top: 1px solid #F4F4F4;
+    clear: both;
+    height: 2px;
+    margin: 24px 0;
+}
 
 /* -----------------------------------
 
@@ -380,3 +407,6 @@ padding: 2em 0 2em 0;
 .bottom-secondary li.last { border:0 }
 .bottom-secondary li a { color:#9d96a8; text-decoration:none; padding:0 12px; }
 .bottom-secondary li a:hover { color:#f9f9f9 }
+
+
+
