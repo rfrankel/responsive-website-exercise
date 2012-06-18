@@ -91,6 +91,7 @@ letter-spacing: -1px;
 font-size: 24pt;
 font-family: 'GROBOLDRegular',sans-serif;
 color: #0DB14B;
+line-height:1.6;
 }
 
 
@@ -100,8 +101,32 @@ font-size: 18pt;
 
 .body p {
 font-size: 12pt;
-line-height:1.2;
+line-height:1.4;
+color: grey;
+margin: 1em;
 }
+
+.bqstart {
+    font-family: 'GROBOLDRegular',sans-serif;
+     float: left;
+     height: 45px;
+     margin-top: -20px;
+     padding-top: 60px;
+     margin-bottom: -50px;
+     font-size: 700%;
+     color: #0DB14B;
+ }
+
+
+ .bqend {
+     font-family: 'GROBOLDRegular',sans-serif;
+     float: right;
+     height: 25px;
+     margin-right: 25px;
+     font-size: 700%;
+     color: #0DB14B;
+ }
+
 
 /*---------------------------
 
