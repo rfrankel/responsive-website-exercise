@@ -87,10 +87,21 @@ color: #0071BC;
 letter-spacing: -1px;
 }
 
+.innertitle {
+font-size: 24pt;
+font-family: 'GROBOLDRegular',sans-serif;
+color: #0DB14B;
+}
+
+
 p {
 font-size: 18pt;
 }
 
+.body p {
+font-size: 12pt;
+line-height:1.2;
+}
 
 /*---------------------------
 
