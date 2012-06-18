@@ -20,7 +20,9 @@
    Shared Styles
 ----------------------------------------- */
 
-body { background:rgb(20,1,44); }
+body { 
+background:rgb(20,1,44); 
+}
 
 @media only screen and (min-width: 768px) {
 	body { 
@@ -80,11 +82,16 @@ body { background:rgb(20,1,44); }
 ------------------------------------*/
 
 .booktitle {
-font-size: 28pt;
+font-size: 48pt;
 line-height: .9;
 font-family: 'GROBOLDRegular',sans-serif;
 color: #0071BC;
 letter-spacing: -1px;
+}
+
+#intro p {
+font-family: "futura-pt-1","futura-pt-2",sans-serif;
+font-size: 32pt;
 }
 
 .innertitle {
@@ -95,15 +102,17 @@ line-height:1.6;
 }
 
 
-p {
+#contentone p, #contenttwo p, #contentthree p, #contentfour p, #contentfive p {
 font-size: 18pt;
+font-family: "futura-pt-1","futura-pt-2",sans-serif;
 }
 
 .body p {
-font-size: 12pt;
+font-size: 12pt !important;
 line-height:1.4;
 color: grey;
 margin: 1em;
+font-family: "futura-pt-1","futura-pt-2",sans-serif;
 }
 
 .bqstart {
