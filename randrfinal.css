@@ -83,7 +83,6 @@ background:rgb(20,1,44);
 
 .booktitle {
 font-size: 48pt;
-line-height: .9;
 font-family: 'GROBOLDRegular',sans-serif;
 color: #0071BC;
 letter-spacing: -1px;
@@ -92,6 +91,7 @@ letter-spacing: -1px;
 #intro p {
 font-family: "futura-pt-1","futura-pt-2",sans-serif;
 font-size: 32pt;
+line-height: 1.2;
 }
 
 .innertitle {
