@@ -115,6 +115,12 @@ margin: 1em;
 font-family: "futura-pt-1","futura-pt-2",sans-serif;
 }
 
+@media only screen and (max-width: 768px) {
+    .body {
+	display: none;
+    }
+}
+
 .bqstart {
     font-family: 'GROBOLDRegular',sans-serif;
      float: left;
