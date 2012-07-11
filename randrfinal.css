@@ -317,10 +317,10 @@ width: 80% !important;
     div.slider-nav span.left {
 	/*background: url("images/orbit/left-arrow.png") scroll 0 0 transparent no-repeat !important;
 left: -12% !important;*/
-	background: url("images/orbit/yellow_backward.png") scroll 0 0 transparent no-repeat !important;
-	height:128px !important;
-	width:128px !important;
-	left: -14% !important;
+	background: url("images/orbit/yellow_backward_sm.png") scroll 0 0 transparent no-repeat !important;
+	height:64px !important;
+	width:64px !important;
+	left: -10% !important;
     }
 }
 
@@ -341,7 +341,10 @@ div.slider-nav span.right {
 
 @media only screen and (min-width: 768px) {
     div.slider-nav span.right {
-	background: url("images/orbit/yellow_forward.png") scroll 0 0 transparent no-repeat !important;
+	background: url("images/orbit/yellow_forward_sm.png") scroll 0 0 transparent no-repeat !important;
+	height:64px !important;
+	width:64px !important;
+    left: 100% !important;
     }
 }
 
