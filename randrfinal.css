@@ -257,7 +257,6 @@ font-family: "futura-pt-1","futura-pt-2",sans-serif;
 	background:transparent;
 	display:block; 
 	text-decoration:none;
-	padding:18px 18px 40px 18px;
 	-webkit-border-top-left-radius: 4px;
 	-webkit-border-top-right-radius: 4px;
 	-moz-border-radius-topleft: 4px;
@@ -267,6 +266,15 @@ font-family: "futura-pt-1","futura-pt-2",sans-serif;
 	border:1px solid transparent;
 	border-bottom:0;
     }
+
+    .mainnav #primary li a {
+	padding:18px 12px 40px 12px;
+    }
+
+    .mainnav #secondary li a {
+	padding:18px 18px 40px 18px;
+    }
+
     .mainnav #primary li a:hover { text-decoration:underline; color:#fff }
     .mainnav #primary li.home { 
 	background:rgba(13,177,75,0.2);
