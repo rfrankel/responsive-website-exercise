@@ -236,8 +236,9 @@ font-family: "futura-pt-1","futura-pt-2",sans-serif;
 	padding:0
     }
     .mainnav #primary li, .mainnav #secondary li { 
-	/*text-transform:lowercase;*/
+	text-transform:uppercase;
 	float:left; 
+	font-family: "futura-pt-1","futura-pt-2",sans-serif;
 	font-size:1.2em;
 	text-align:center;
 	background:transparent;
@@ -267,7 +268,9 @@ font-family: "futura-pt-1","futura-pt-2",sans-serif;
 	border-bottom:0;
     }
     .mainnav #primary li a:hover { text-decoration:underline; color:#fff }
-    .mainnav #primary li.home { background:rgba(13,177,75,0.2); }
+    .mainnav #primary li.home { 
+	background:rgba(13,177,75,0.2);
+    }
     .mainnav #primary li.home a { background:#fff; border-color:#6e637e; color:#533f6e }
     .mainnav #primary li.home a:hover { text-decoration:none }
     .mainnav #primary span { padding-left:0 }
