@@ -397,7 +397,8 @@ div.slider-nav span.right {
 
 @media only screen and (max-width: 767px) {
     div.slider-nav span.right {
-	background: url("images/orbit/blue_forward.png") scroll 0 0 transparent no-repeat !important;
+	background: url("images/orbit/blue_forward_sm.png") scroll 0 0 transparent no-repeat !important;
+    left: 105% !important;
     }
 }
 
