@@ -34,7 +34,7 @@ background:#ffcc00;
 }*/
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
    body .container {
         background:rgb(215,63,45);
 	padding: 0px 0px !important;
@@ -115,7 +115,7 @@ margin: 1em;
 font-family: "futura-pt-1","futura-pt-2",sans-serif;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
     .body {
 	display: none;
     }
@@ -197,7 +197,7 @@ font-family: "futura-pt-1","futura-pt-2",sans-serif;
 	      margin:30px;
 	      width:25% }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
     .phonemenu {
 	display: inline-block !important;
     }
@@ -211,6 +211,7 @@ font-family: "futura-pt-1","futura-pt-2",sans-serif;
 
 .blue.button {
     background-color: #0071BC; 
+    font-family: "futura-pt-1","futura-pt-2",sans-serif;
 }
 
 
@@ -228,10 +229,10 @@ font-family: "futura-pt-1","futura-pt-2",sans-serif;
 	display:block; 
 	z-index:99999; 
 	width:auto }
-    .mainnav #primary { left:25px;}
-    .mainnav #secondary { left:-25px;}
+    .mainnav #primary { left:75px;}
+    /*.mainnav #secondary { left:-25px;}*/
     .mainnav #primary ul, .mainnav #secondary ul { 
-	list-style:none; 
+	list-style: none outside none; 
 	margin:0; 
 	padding:0
     }
@@ -279,7 +280,41 @@ font-family: "futura-pt-1","futura-pt-2",sans-serif;
     .mainnav #primary li.home { 
 	background:rgba(13,177,75,0.2);
     }
-    .mainnav #primary li.home a { background:#fff; border-color:#6e637e; color:#533f6e }
+    .mainnav #primary li.home a { 
+	background:#fff; 
+	border-color:#6e637e; 
+	color: darkgreen;                 /* was #533f6e */
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .mainnav #primary {
+	color: darkgreen; 
+	background: none repeat scroll 0 0 rgba(0,113,188,0.2);
+	font-family: "futura-pt-1","futura-pt-2",sans-serif;
+	font-size:1.2em;
+	overflow: auto;
+	border-bottom-style: dotted; 
+	border-color: rgba(13, 177, 75, 0.8);
+	border-width: 1px;
+    }
+
+    .mainnav #primary li {
+	text-transform:uppercase;
+	display: block;
+	float: left;
+	padding: .7em;
+	border-right-style: dotted; 
+	border-color: rgba(13, 177, 75, 0.8);
+	border-width: 1px;
+	margin-bottom: 0px;
+    }
+
+     a {
+	 color: darkgreen;
+     }
+}
+
     .mainnav #primary li.home a:hover { text-decoration:none }
     .mainnav #primary span { padding-left:0 }
     
@@ -318,7 +353,7 @@ height: 470;
 width: 80% !important;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
     div.slider-nav span.left {
 	background-image: none !important;
     }
@@ -359,7 +394,7 @@ div.slider-nav span.right {
     }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
     div.slider-nav span.right {
 	background: url("images/orbit/blue_forward.png") scroll 0 0 transparent no-repeat !important;
     }
