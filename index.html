@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+
+<head>
+       
+	<meta charset="utf-8" />
+
+	<!-- Set the viewport width to device width for mobile -->
+	<meta name="viewport" content="width=device-width" />
+
+	<title>Ryan and Robbie</title>
+  
+	<!-- Included CSS Files -->
+	<link rel="stylesheet" href="stylesheets/foundation.css">
+	<link rel="stylesheet" href="stylesheets/app.css">
+	<link rel="stylesheet" href="randrfinal.css" />
+
+	<!--[if lt IE 9]>
+		<link rel="stylesheet" href="stylesheets/ie.css">
+	<![endif]-->
+	
+	<script src="javascripts/modernizr.foundation.js"></script> 
+
+	<!-- IE Fix for HTML5 Tags -->
+	<!--[if lt IE 9]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+	<!-- Included JS Files -->
+	<script src="javascripts/jquery.min.js"></script>
+	<script src="javascripts/foundation.js"></script> 
+	<script src="javascripts/app.js"></script>
+	<script type="text/javascript">
+	  $(window).load(function() {
+             $('#topslideshow').orbit({
+             bullets: true
+           });
+	  });
+	</script>
+
+	<!-- Load big background image last -->
+        <!--- following advice in: 
+        http://stackoverflow.com/questions/506126/
+        delaying-the-loading-of-a-certain-css-background-image, 
+        but after realizing the background image could be compressed
+        to one tenth the size, decided the extra moving parts weren't
+        weren't worth it, especially since there is extra complexity
+        because of the responsive design. -->
+       <!--	<script type="text/javascript">
+	  function loadBG(){
+	     document.getElementById("bgID").style.backgroundImage="url(images/BOB_background.jpg)";
+	  }
+	  window.onload=loadBG();
+	</script> -->
+
+
+	<!-- Typekit -->
+	<script type="text/javascript" src="http://use.typekit.com/orf0awp.js"></script>
+	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+</head>
+<body id="bgID">
+
+  <!-- container -->
+  <div class="container">
+    
+    <div class="row">
+      <div class="twelve columns">
+	<div id="header" class="row">
+	  <div class="three columns hide-on-phones">
+	    <div class="logo">		  
+	      <p><a alt="go back home" href="./">Ryan and Robbie</a></p>
+	    </div>
+	  </div>
+	  <div class="mainnav five columns">
+	    <div id="primary">
+	      <ul>
+		<li class="home"><a href="./">Home</a></li>
+		<li class="about"><a href="./">About</a></li>
+		<li class="blog"><a href="./">Blog</a></li>
+	      </ul>
+	    </div>
+	  </div>
+	  <div class="mainnav three columns hide-on-phones">
+	    <div id="secondary">
+	      <ul>
+		<!-- <li class="blog"><a href="http://ryanandrobbie.com/blog/">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li> -->
+		<li class="fb"><a href="http://www.facebook.com/pages/Ryan-and-Robbie/13451051963">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+	<!--	<li class="twitter"><a href="https://twitter.com/#!/ryanandrobbie">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li> -->
+		<li class="twitterbird last"><a href="https://twitter.com/#!/ryanandrobbie">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+	      </ul>
+	    </div>
+	  </div>
+	  
+	  
+	  <div class="phonelogo show-on-phones">
+	    <!-- <div class="panel">
+		 <p>Logo</p>
+	    </div> -->
+	    <p><a alt="go back home" href="/">Ryan and Robbie</a></p>
+	  </div>
+          <div class="phonemenu show-on-phones">
+	    <a class="nice radius medium blue button" href="#menu">MORE</a>
+            <!-- <div class="panel">
+		 <p>Button</p>
+	    </div>
+	  </div>-->
+	  </div>
+          <div class="clearfix"></div>
+	</div>  
+	  
+	<div id="main" class="row">
+	  <div class="twelve columns">
+	    <!-- the div for the transparent wrapper shim -->
+	    <div class="wrapper">
+	      <!-- the div for the green inner shim -->
+	      <div class="inner">
+		<!-- the div for the solid background and border-->
+		<div class="page">
+		  <!-- and a new row of our grid-->
+		  <div id="hero" class="row">
+		    <div class="intro ten columns centered">
+		      <div id="topslideshow">
+<!--			<div class="slide1">
+			  <div class="slidetext"> 
+			    <p> Roger Hackett<br /> 
+			      wrote the first </p>
+			    <span class="booktitle">Ryan & <br /> Robbie</span>
+			    <p><br />book to amuse his kids.</p>
+			  </div>
+			</div> -->
+	<!---		<img src="images/Slide1Cand3.png" alt="Origin of Ryan and Robbie." /> 
+			<img src="images/slide2cand2.png"  alt="R&R's surprising success."/>
+			<img src="images/slide3cand1.png" alt="Introducing the new book." />
+			<img src="images/slide4cand2.png" alt="Appeal for help with new printing." /> -->
+<img src="images/slide1_opt.jpg" alt="Origin of Ryan and Robbie." /> 
+			<img src="images/slide2_opt.jpg"  alt="R&R's surprising success."/>
+			<img src="images/slide3_opt.jpg" alt="Introducing the new book." />
+			<img src="images/slide4_opt.jpg" alt="Appeal for help with new printing." />
+		      </div>
+		    </div>
+		  </div>
+
+		  <div class="hide-on-phones">
+		    <div class="prettydivider"></div>
+		  </div>
+		  <div class="hide-on-desktops">
+		    <div class="divider"></div>
+		  </div>
+
+		  <div id="intro" class="row">
+		    <div class="ten columns centered">
+		      <p>The <span class="booktitle">Ryan & Robbie</span> books tell the story of... </p>
+		    </div>
+		  </div>
+
+		  <div class="hide-on-phones">
+		    <div class="prettydivider"></div>
+		  </div>
+		  <div class="hide-on-desktops">
+		    <div class="divider"></div>
+		  </div>
+
+		  <div id="contentone" class="row">
+		    <div class="six columns">
+			<img src="images/imgadventures_opt.jpg" alt="Ryan and Robbie biking in their neighborhood." />		      
+		    </div>
+		    <div class="six columns">
+		      <p>..the <span class="innertitle">adventures</span> ... </p>
+	      <div class="body"><span class="bqstart">&#8220;</span><p> Ryan and Robbie loved to go on adventures, and one day they wanted to go for a bike ride.</br></br>
+			  Their mom always took great care of the boys. She knew that sometimes Ryan rode his bike so fast, he looked as if he were flying.</br></br>
+		  And even though Robbie rode his bike slower, she knew that he was curious about everything and often liked to get off his bike and play. 
+			  <span class="bqend">&#8221;</span></div>
+
+
+		    </div>
+		  </div>
+
+		  <div class="hide-on-phones">
+		    <div class="prettydivider"></div>
+		  </div>
+		  <div class="hide-on-desktops">
+		    <div class="divider"></div>
+		  </div>
+		  
+		  <div id="contenttwo" class="row">
+		    <div class="six columns">
+			<img src="images/imgmulticultural.jpg" alt="Image of China and Seattle" />		      
+		    </div>
+		    <div class="six columns">
+		      <p>... of <span class="innertitle">multicultural</span> brothers... </p>
+		      <div class="body"><span class="bqstart">&#8220;</span><p> Ryan and Robbie are brothers.</br></br>
+
+			  Ryan is two years older, and sometimes Robbie calls him Ge Ge, which means "elder brother" in Chinese.</br></br>
+			  They were born in California and now they live in Washington State... Their mother is from China. 
+			  <span class="bqend">&#8221;</span></div>
+
+		    </div>
+		  </div>
+
+		  <div class="hide-on-phones">
+		    <div class="prettydivider"></div>
+		  </div>
+		  <div class="hide-on-desktops">
+		    <div class="divider"></div>
+		  </div>
+
+
+		  <div id="contentthree" class="row">
+		    <div class="six columns">
+		      <img src="images/imgvaluesbooktwo_opt.jpg" alt="Ryan and Robbie teach baby Ray a lesson." />		      
+		    </div>
+		    <div class="six columns">
+		      <p>..as they learn <span class="innertitle">values</span> ... </p>
+<div class="body"><span class="bqstart">&#8220;</span><p> Ryan and Robbie teach their little brother</br>
+ the Kung Fu 
+way of thinking.</br></br>
+Ryan says, “To do Kung Fu, we must be respectful.”</br></br>
+Robbie says, “To do Kung Fu, we must listen carefully.” </br></br>
+Together, they say, “To master Kung Fu, we must not 
+make trouble. We must practice self-defense!”</br></br> </p><span class="bqend">&#8221;</span></div>
+
+		    </div>
+		  </div>
+
+
+		  <div class="hide-on-phones">
+		    <div class="prettydivider"></div>
+		  </div>
+		  <div class="hide-on-desktops">
+		    <div class="divider"></div>
+		  </div>
+
+
+		  <div id="contentfour" class="row">
+		    <div class="six columns">
+		      <img src="images/imggenerations_opt.jpg" alt="Ryan and Robbie learn from their grandfather." />		      
+		    </div>
+		    <div class="six columns">
+		      <p>... from <span class="innertitle">past generations</span> ... </p>
+<div class="body"><span class="bqstart">&#8220;</span><p>
+Ryan and Robbie love Kung Fu!</br></br>
+They practice every day. </br></br>
+The brothers learned Kung Fu from their lao yé when they 
+visited China last year. </br></br>
+(Lao yé means “grandfather” in Chinese.)
+</p><span class="bqend">&#8221;</span></div>
+		    </div>
+		  </div>
+
+		  <div class="hide-on-phones">
+		    <div class="prettydivider"></div>
+		  </div>
+		  <div class="hide-on-desktops">
+		    <div class="divider"></div>
+		  </div>
+
+
+		  <div id="contentfive" class="row">
+		    <div class="six columns">
+		      <img src="images/imgfamily_opt.jpg" alt="Ryan and Robbie learn from their grandfather." />		      
+		    </div>
+		    <div class="six columns">
+		      <p>..and become closer as a <span class="innertitle">family</span>. </p>
+<div class="body"><span class="bqstart">&#8220;</span><p>
+"Come on in and give me a hug. It's time for lunch," their mom said.</br></br>
+The boys gave her a big hug, washed their hands, then sat down with their mom and dad to pray as a family. </br></br>
+They ate pot stickers, corn on the cob, spinach and carrots. The boys told their mom all about their bike ride...Then they each whispered in their mother's ear and told her exactly how Lao Lao's secrets had helped them.</br></br>
+</p><span class="bqend">&#8221;</span></div>
+		    </div>
+		  </div>
+
+		</div>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+      </div>
+      
+
+        <div class="bottom clearfix"></div>
+        <div id="phonebottommenu" class="show-on-phones">
+	  <div class="eight columns">
+    	    <a name="menu"></a>
+    	    <div class="gototop"><a href="#top">Top</a></div>	  
+	    <div class="bottom-primary">
+    	      <ul>
+		<li class="home"><a href="randrfinal.html"><span>Home</span></a></li>
+		<li class="blog"><a href="http://ryanandrobbie.com/blog/"><span>Blog</span></a></li>
+		<li><a href="http://www.facebook.com/pages/Ryan-and-Robbie/13451051963"><span>Ryan and Robbie on Facebook</span></a></li>
+		<li class="showcase"><a href="https://twitter.com/#!/ryanandrobbie"><span>Ryan and Robbie on Twitter</span></a></li>
+		<li class="getstarted"><a href="http://www.amazon.com/Robbies-Adventure-Chinese-Secrets-Englilsh/dp/0982025467"><span>Buy The Book</span></a>
+		</li>
+	      </ul>
+	    </div>
+
+	    <div class="bottom-secondary show-on-phones">
+	      <ul>
+		<li><a href="/">Roger Hackett</a></li>
+		<li><a href="">+1</a></li>
+		<li class="last"><a href="">Like</a></li>
+	      </ul>
+	    </div>
+	  </div>
+	</div>
+      </div>
+    
+    </div>
+  </div>
+  <!-- container -->
+  
+
+ 
+  <!-- Included JS Files -->
+  <script src="javascripts/jquery.min.js"></script>
+  <script src="javascripts/foundation.js"></script> 
+  <script src="javascripts/app.js"></script>
+  
+</body>
+</html>
