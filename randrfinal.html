@@ -43,12 +43,27 @@
 	  });
 	</script>
 
+	<!-- Load big background image last -->
+        <!--- following advice in: 
+        http://stackoverflow.com/questions/506126/
+        delaying-the-loading-of-a-certain-css-background-image, 
+        but after realizing the background image could be compressed
+        to one tenth the size, decided the extra moving parts weren't
+        weren't worth it, especially since there is extra complexity
+        because of the responsive design. -->
+       <!--	<script type="text/javascript">
+	  function loadBG(){
+	     document.getElementById("bgID").style.backgroundImage="url(images/BOB_background.jpg)";
+	  }
+	  window.onload=loadBG();
+	</script> -->
+
 
 	<!-- Typekit -->
 	<script type="text/javascript" src="http://use.typekit.com/orf0awp.js"></script>
 	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 </head>
-<body>
+<body id="bgID">
 
   <!-- container -->
   <div class="container">
@@ -135,7 +150,7 @@
 
 		  <div id="intro" class="row">
 		    <div class="ten columns centered">
-		      <p>The <span class="booktitle">Ryan & Robbie</span> books</br> tell the story of... </p>
+		      <p>The <span class="booktitle">Ryan & Robbie</span> books tell the story of... </p>
 		    </div>
 		  </div>
 
