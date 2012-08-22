@@ -123,6 +123,12 @@ color: grey;
 margin: 1em;
 }
 
+.innerbody p strong {
+font-family: "futura-pt-1","futura-pt-2",serif;
+font-style: normal;
+font-weight: 700;
+}
+
 @media only screen and (max-width: 767px) {
     .body {
 	display: none;
