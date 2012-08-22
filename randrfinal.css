@@ -94,6 +94,14 @@ font-size: 32pt;
 line-height: 1.2;
 }
 
+/* otherwise the captions are uncomfortably 
+crowded and too far left in the phone version */
+@media only screen and (max-width: 767px) {
+.innerhead {
+padding: 1em 3em 0 3em;
+}
+}
+
 .innertitle {
 font-size: 24pt;
 font-family: 'GROBOLDRegular',sans-serif;
@@ -228,7 +236,7 @@ font-family: "futura-pt-1","futura-pt-2",sans-serif;
 	top: 79px; 
 	display:block; 
 	z-index:99999; 
-	width:auto }
+	width:100% }
     .mainnav #primary { left:75px;}
     /*.mainnav #secondary { left:-25px;}*/
     .mainnav #primary ul, .mainnav #secondary ul { 
@@ -236,7 +244,7 @@ font-family: "futura-pt-1","futura-pt-2",sans-serif;
 	margin:0; 
 	padding:0
     }
-    .mainnav #primary li, .mainnav #secondary li { 
+    .mainnav #primary li {
 	text-transform:uppercase;
 	float:left; 
 	font-family: "futura-pt-1","futura-pt-2",sans-serif;
@@ -252,6 +260,14 @@ font-family: "futura-pt-1","futura-pt-2",sans-serif;
 	border-top-right-radius: 8px;
 	padding:8px 8px 0 8px;
     } 
+
+ .mainnav #secondary li { 
+	float:right; 
+	background:transparent;
+	border-bottom:none;
+	padding:0 5% 8px 5%;
+}
+
     .mainnav #primary li a, .mainnav #secondary li a {
 	font-weight:700;
 	color:#f8f1ff;
@@ -320,10 +336,10 @@ font-family: "futura-pt-1","futura-pt-2",sans-serif;
     
     /* Icons */
     
-    .mainnav #secondary li.blog { background:url('images/iconwordpress_sm_green.png') no-repeat scroll 15px -3px; }
-    .mainnav #secondary li.fb { background:url('images/iconfacebook_sm_green.png') no-repeat scroll 15px -3px; }
-    .mainnav #secondary li.twitter { background:url('images/icontwitter_sm_green.png') no-repeat scroll 15px -3px; }
-    .mainnav #secondary li.twitterbird { background:url('images/icontwitter_bird_sm_green.png') no-repeat scroll 15px -3px; }
+    .mainnav #secondary li.blog { background:url('images/iconwordpress_sm_green.png') no-repeat scroll 0px -3px; }
+    .mainnav #secondary li.fb { background:url('images/iconfacebook_sm_green.png') no-repeat scroll 0px -3px; }
+    .mainnav #secondary li.twitter { background:url('images/icontwitter_sm_green.png') no-repeat scroll 0px -3px; }
+    .mainnav #secondary li.twitterbird { background:url('images/icontwitter_bird_sm_green.png') no-repeat scroll 0px -3px; }
 
 }
 
@@ -339,6 +355,10 @@ font-family: "futura-pt-1","futura-pt-2",sans-serif;
      #topslideshow img,  #topslideshow div { display: none; }
 </style>
 */
+
+/* Following advice in http://joomquery.com/en/javascript/javascript-jquery/7215-jquery-countdown-image-slider-plugin.html for dealing with loading state. 
+"For those who are in pursuit of the ultimate polish, we've made it easy to create a simple loading state for your slider. " */
+
 
 .center {
 margin-left:auto;
@@ -370,6 +390,14 @@ left: -12% !important;*/
 	left: -10% !important;
     }
 }
+
+#topslideshow { 
+    width: 700px; 
+    height: 420px; 
+    background: white url("orbit/loading.gif") no-repeat center center; 
+    overflow: hidden; 
+}
+
 
 #topslideshow .slide1 {
 background: url(images/slide1.jpg) no-repeat;
