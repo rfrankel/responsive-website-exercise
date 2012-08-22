@@ -97,9 +97,14 @@ line-height: 1.2;
 /* otherwise the captions are uncomfortably 
 crowded and too far left in the phone version */
 @media only screen and (max-width: 767px) {
-.innerhead {
-padding: 1em 3em 0 3em;
+    .innerhead {
+	padding: 1em 3em 0 3em;
+    }
 }
+
+/* this is just for the spacing of the contact email address */
+.innerhead strong {
+    line-height: 1.2;
 }
 
 .innertitle {
@@ -118,9 +123,8 @@ font-family: "futura-pt-1","futura-pt-2",sans-serif;
 .innerbody p {
 font-size: 14pt !important;
 font-family: "futura-pt-1","futura-pt-2",sans-serif; 
-line-height:1.4;
 color: grey;
-margin: 1em;
+margin: 1em; 
 }
 
 .innerbody p strong {
