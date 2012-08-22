@@ -115,12 +115,12 @@ font-size: 18pt;
 font-family: "futura-pt-1","futura-pt-2",sans-serif;
 }
 
-.body p {
+.innerbody p {
 font-size: 14pt !important;
+font-family: "futura-pt-1","futura-pt-2",sans-serif; 
 line-height:1.4;
 color: grey;
 margin: 1em;
-font-family: "futura-pt-1","futura-pt-2",sans-serif;
 }
 
 @media only screen and (max-width: 767px) {
