@@ -102,9 +102,10 @@ crowded and too far left in the phone version */
     }
 }
 
-/* this is just for the spacing of the contact email address */
+/* this is just for the spacing of the contact email address 
+I want it to look like one object, without totally smashing into itself.*/
 .innerhead strong {
-    line-height: 1.2;
+    line-height: .9;
 }
 
 .innertitle {
