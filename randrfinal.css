@@ -394,7 +394,7 @@ left: -12% !important;*/
 #topslideshow { 
     width: 700px; 
     height: 420px; 
-    background: white url("orbit/loading.gif") no-repeat center center; 
+    background: white url("images/orbit/loading.gif") no-repeat center center; 
     overflow: hidden; 
 }
 
