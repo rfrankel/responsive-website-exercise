@@ -142,6 +142,11 @@ margin: 1em;
     .innerbody {
 	display: none;
     }
+
+    .inneraction p {
+        /* same padding as the buy button form below */
+	padding: 0 10% 0 10%;
+    }
 }
 
 .bqstart {
@@ -488,6 +493,21 @@ padding: 1em 0 2em 0;
     height: 2px;
     margin: 24px 0;
 }
+
+/* -----------------------------------
+
+    Buy Button Table (for Shop) 
+
+-----------------------------------*/
+
+/* The buy button form is a legacy thing from the old site. 
+I didn't want to mess with it. I'm giving it minimal styles 
+just to keep it reasonably aligned with everything else. */
+
+.buyform {
+   padding: 0 10% 0 10%;
+}
+
 
 /* -----------------------------------
 
