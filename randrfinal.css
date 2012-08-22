@@ -129,6 +129,15 @@ font-style: normal;
 font-weight: 700;
 }
 
+/* Basically the same as innerbody but it doesn't disappear on phones 
+Used for things that call for action, like buying or contacting */
+.inneraction p {
+font-size: 14pt !important;
+line-height:1.4;
+color: grey;
+margin: 1em;
+}
+
 @media only screen and (max-width: 767px) {
     .innerbody {
 	display: none;
