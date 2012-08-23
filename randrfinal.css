@@ -126,6 +126,7 @@ font-size: 14pt !important;
 font-family: "futura-pt-1","futura-pt-2",sans-serif; 
 color: grey;
 margin: 1em; 
+line-height:1.4;
 }
 
 .innerbody p strong {
