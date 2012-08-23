@@ -1,9 +1,7 @@
-As recommended by Github, a README:
-
 These are the files for a schematic version of a website built with
 Foundation. I was trying out using a responsive grid, responsive
-slideshow (not added yet, but already buit), mobile phone version,
-media queries, web fonts, the whole shebang. 
+slideshow, special mobile phone friendly styles, media queries, 
+web fonts, the whole shebang. 
 
 At first I am include everything in the schematic version so as to
 push this to a webserver and test in various browsers. When I am sure
@@ -11,6 +9,13 @@ the schematic works I will commit the wizzy content in the place of the
 schematic elements. So if you follow the commits you can see how a 
 responsive design can be filled in. 
 
+Update: the schematic version, which is the file randrfinal.html, which
+despite its name, is not really final, has been turned into a real site, 
+whose root is the file index.html (naturally enough).
+
 It is a site for a Kickstarter campaign for a kids' book, incidentally. 
+Currently, in August 2012, I am serving this version at
+www.rebeccafrankel.com/randr/
 
-
+For more nitty-gritty technical commentary geared toward someone who 
+might want to go forward with this design, see humans.txt.
