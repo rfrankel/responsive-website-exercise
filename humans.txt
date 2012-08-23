@@ -121,6 +121,12 @@ except for the auxiliary mobile phone menu. If there was really
 a need for more space for more menu items, one might want to rethink 
 my design that, for the most part, ignores the footer. 
 
+One place where the lack of the footer shows: my placement of "contact" 
+sections is rather clumsy. It doesn't really deserve a page by itself, 
+there is no footer space for it, so I tack it on the end of content pages. 
+Then again, I like the cute baby image I paired it with, even though 
+the pairing is thoroughly gratuitious. 
+
 On the other hand, that may have been a result of a another choice 
 of mine which results from my general attitude that requiring scrolling 
 from a user is not dire, but too-small text and not enough white space 
@@ -142,6 +148,63 @@ would look visually aligned with the more square ones. I don't think
 I was completely succesful in this, but to the degree it worked it 
 required some padding of the squarer ones with whitespace on the left 
 side. 
+
+Links, Hover state, etc. 
+
+I didn't give as much attention as perhaps I should have to the link 
+colors, active states, hover states, etc. My one link in body text is
+a rather banal blue, but since it matched the book it was refering to 
+I didn't bother changing it. 
+
+Favicon
+
+When I was developing this page, I had a bunch of links open, and it began 
+to really bug me that Ryan and Robbie had no favicon. Having a favicon is 
+one of those little things that is easy to miss, but is one of those little 
+details that separates the amateur from the professional sites. 
+So I whipped up an attempt by taking the R&R initials from the logo 
+and running them through a favicon generator. 
+I was hoping the blue yellow and green splotch would be recognizable and 
+distinctive even at really small size. I'm not sure if this turned out to
+be true. I'm also not sure if this was a problem with the concept or the 
+implementation. 
+
+Performance
+
+This is a rather image heavy site, with a big background image. 
+The background image wasn't my idea --- I copied it from the beta 
+site. At first it was horrifically slow to load, and I doubted 
+the whole design on that account, but I jpeg optimized it a whole 
+bunch, which made it marginally less pretty but a whole bunch faster
+to load. I really like that background image, with Seattle on one 
+side and China on the other; it echos the theme of multiculturalism 
+that is touched on many times in the text. I like its pretty yellow 
+sky, which would be overwhelming if it were the entire background, but 
+as the sky is quite cheery. And then the transition down to green 
+helps pull together my headlines, edging and other green accents
+throughout the site. The background is expensive, but I'd hate to 
+lose it for performance reasons. 
+
+I could have installed a lazy image loader if I had been really concerned 
+about performance, but it would have been one more moving piece, 
+and I was already upset that something that was supposed to be a 
+quick design job had gotten bogged down in debugging. So I didn't. 
+It might be a top thing I would suggest to someone who might want 
+to spruce up the site. 
+
+The image slideshow is also a bit of a heavy weight on loading time, 
+but I installed a little "loading" state in the CSS (I think it works!). 
+Another thing that could be done is transform my image slides to html
+slides with image backgrounds. In theory Orbit can manage this, though 
+in practice my experiments with it found that it made the responsiveness 
+of the site much more fragile, so I abandoned that line of investigation. 
+
+Another thing that might improve the initial load time is to break
+apart the big front page into two pages. Less scrolling too. But 
+I really like how the slideshow leads into this big headline saying 
+"The Ryan and Robbie books tell the story of..." I think it will 
+keep someone reading in a way that another page that one finds by 
+clicking a button really wouldn't. 
 
 
  
