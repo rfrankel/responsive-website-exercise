@@ -169,6 +169,28 @@ distinctive even at really small size. I'm not sure if this turned out to
 be true. I'm also not sure if this was a problem with the concept or the 
 implementation. 
 
+Cross Browser Testing
+
+I have only done informal cross-browser testing. I did install the
+package of multiple copies of IE, and confirmed that the basic
+structure does not completely disintegrate in middling-old versions of
+IE like 7 and 8, though it isn't very pretty. Of course, IE 6 is
+hopeless. 
+
+I sweated the mobile (narrow window) styles more, and my CSS file
+makes a lot of media queries. There may be a litte bit of instability
+at the "breaking" width, i.e. 767 pixels, but I tried to fix that too.
+
+ I have not tested this on actual mobile phones, only on narrowed
+desktop simulations of them. Real cross browser testing might require
+a better setup than I have.
+
+There are some provisions in the CSS file for making special styles
+for older versions of IE, which for the most part I haven't taken
+advantage of. A designer who knows more than I do about the history of
+cross-browser hacking could probably use these hooks to better effect
+than I.
+
 Performance
 
 This is a rather image heavy site, with a big background image. 
